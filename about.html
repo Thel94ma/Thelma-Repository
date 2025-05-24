@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Me | Thelma Thomas</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Header Section -->
   <header>
     <div class="logo">TT</div>
     <nav>
@@ -16,40 +20,43 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
+  <!-- Main Content -->
   <main>
     <section class="about-section">
-           <div class="about-details">
+      <div class="about-details">
         <h1>About Me</h1>
         <p>
-          I'm Thelma Thomas, a web developer & designer based in Bernard's Farm, Paynesville-Liberia. I am passionate about crafting digital experiences that are both functional and visually engaging.<br><br>
-          My journey started with curiosity for web technologies, and today, I have a strong portfolio of projects in various domains. I value clean code, creative design, and accessibility.<br><br>
-          <strong>Skills:</strong>
+          I'm Thelma Thomas, a web developer & designer based in Bernard's Farm, Paynesville-Liberia. 
+          I am passionate about crafting digital experiences that are both functional and visually engaging.<br><br>
+          My journey started with curiosity for web technologies, and today, I have a strong portfolio of projects in various domains.
         </p>
+        
+        <h2>Skills</h2>
         <ul class="skills-list about-skills">
           <li><i class="fab fa-html5"></i> HTML5</li>
           <li><i class="fab fa-css3-alt"></i> CSS3 (Grid, Flexbox)</li>
           <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
           <li><i class="fas fa-accessible-icon"></i> Accessibility</li>
         </ul>
-        <p>
-          <em>Let's build something amazing together!</em>
-        </p>
+        <p><em>Let's build something amazing together!</em></p>
       </div>
     </section>
   </main>
+
+  <!-- Footer Section -->
   <footer>
     <div class="footer-content">
-      <div>
-        <span class="logo-sm">TT</span> © Thelma Thomas
-      </div>
+      <div><span class="logo-sm">TT</span> © 2025 Thelma Thomas</div>
       <div class="socials">
-        <a href="Instagram Small"><i class="fab Instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="https://instagram.com/thelmathomas" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/thelmathomas" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:thelma@example.com"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </footer>
-  <!-- Profile Modal -->
+
+  <!-- Modal for Additional Profile Details -->
   <div id="profileModal" class="modal">
     <div class="modal-content">
       <span class="close" id="closeProfileModal">&times;</span>
@@ -57,17 +64,20 @@
       <p>
         Hi! I'm Thelma Thomas, a passionate web developer and designer with 2+ years of experience.
         I specialize in building fast, user-friendly, and visually appealing sites and web apps.<br><br>
-        My expertise includes:<br>
-        <ul>
-          <li>HTML, CSS (Grid & Flexbox), JavaScript, React</li>
-          <li>UI/UX Design & Prototyping</li>
-          <li>Responsive & accessible web development</li>
-          <li>Creative problem-solving & teamwork</li>
-        </ul>
-        Outside of coding, I enjoy photography and hiking.
+        My expertise includes:
       </p>
+      <ul>
+        <li>HTML, CSS (Grid & Flexbox), JavaScript, React</li>
+        <li>UI/UX Design & Prototyping</li>
+        <li>Responsive & accessible web development</li>
+        <li>Creative problem-solving & teamwork</li>
+      </ul>
+      <p>Outside of coding, I enjoy photography and hiking.</p>
     </div>
   </div>
+
+  <!-- JavaScript File -->
   <script src="script.js"></script>
+
 </body>
 </html>

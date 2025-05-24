@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Thelma Thomas</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Header Section -->
   <header>
-    <div class="logo">JD</div>
+    <div class="logo">TT</div>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Me</a>
       <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
+
+  <!-- Contact Form Section -->
   <main>
     <section class="contact-section">
       <h1>Contact Me</h1>
       <p>Have a project or want to connect? Shoot me a message!</p>
-      <form id="contactForm" autocomplete="off">
+
+      <form id="contactForm">
         <div class="form-group">
           <label for="name"><i class="fas fa-user"></i> Name</label>
-          <input type="text" id="name" name="name" required autocomplete="off" />
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
         </div>
+
         <div class="form-group">
           <label for="email"><i class="fas fa-envelope"></i> Email</label>
-          <input type="email" id="email" name="email" required autocomplete="off" />
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
         </div>
+
         <div class="form-group">
           <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
-          <textarea id="message" name="message" rows="5" required autocomplete="off"></textarea>
+          <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea>
         </div>
-        <button type="submit" class="primary">Send Message</button>
+
+        <button id="btn" type="submit" class="primary">Send Message</button>
       </form>
     </section>
   </main>
+
+  <!-- Footer Section -->
   <footer>
     <div class="footer-content">
-      <div>
-        <span class="logo-sm">TT</span> © 2025 Thelma Thomas
-      </div>
+      <div><span class="logo-sm">TT</span> © 2025 Thelma Thomas</div>
       <div class="socials">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/thelmathomas" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/thelmathomas" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:thelma@example.com"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </footer>
-  <!-- Confirmation Modal -->
+
+  <!-- Confirmation & Success Modals -->
   <div id="confirmModal" class="modal">
     <div class="modal-content">
       <h2>Are you sure you want to submit this form?</h2>
@@ -59,14 +70,16 @@
       </div>
     </div>
   </div>
-  <!-- Success Modal -->
+
   <div id="successModal" class="modal">
     <div class="modal-content">
       <span class="close" id="closeSuccessModal">&times;</span>
       <h2>Thank you!</h2>
-      <p>Your message has been sent.</p>
+      <p>Your message has been sent successfully.</p>
     </div>
   </div>
+
   <script src="script.js"></script>
+
 </body>
 </html>

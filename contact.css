@@ -1,0 +1,218 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+}
+
+nav a:hover, .active {
+  color: #f1c40f;
+}
+
+/* Contact Form Section */
+.contact-section {
+  max-width: 700px;
+  margin: 3rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+label i {
+  margin-right: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button.primary {
+  background: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button.primary:hover {
+  background: #2980b9;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  padding: 1rem;
+  color: white;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #f1c40f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-section {
+    padding: 1.5rem;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* Modal Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 2rem;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.modal-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* Buttons */
+button.primary {
+  background: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button.primary:hover {
+  background: #2980b9;
+}
+
+button.secondary {
+  background: #ccc;
+  color: #333;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.secondary:hover {
+  background: #bbb;
+}
+
+/* Responsive Modal */
+@media (max-width: 600px) {
+  .modal {
+    width: 95%;
+    padding: 1.5rem;
+  }
+}

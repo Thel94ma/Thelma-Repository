@@ -34,6 +34,12 @@ header {
   padding: 0.2rem 0.7rem;
 }
 
+nav{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 nav a {
   margin-left: 2rem;
   text-decoration: none;
@@ -151,4 +157,22 @@ nav a.active::after {
   box-shadow: 0 8px 32px #377dff33;
 }
 
-/* Projects Section
+.modal{
+  position: fixed;
+  top: 15em;
+  left: 10em;
+  display: none;
+}
+
+.modal-content{
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: 600px;
+}
+
+.close{
+  font-size: 28px;
+  cursor: pointer;
+}

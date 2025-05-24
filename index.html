@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thelma Thomas | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">TT</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hello, I'm <span class="highlight">Thelma Thomas</span></h1>
+        <h2>Web Developer & Designer</h2>
+        <p>I create beautiful, responsive websites with clean and efficient code.</p>
+        <div class="buttons">
+          <a href="contact.html" class="primary">Get in Touch</a>
+          <a href="about.html" class="secondary">About Me</a>
+        </div>
+        <div class="skills-list">
+          <span><i class="fab fa-html5"></i> HTML5</span>
+          <span><i class="fab fa-css3-alt"></i> CSS3</span>
+          <span><i class="fab fa-react"></i> React</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img id="profilePhoto" src="Thomas.jpg" alt="John Doe" style="cursor:pointer;" />
+      </div>
+         </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div>
+        <span class="logo-sm">TT</span> © 2025 Thelma Thomas
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- Profile Modal -->
+  <div id="profileModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeProfileModal">&times;</span>
+      <h2>About Thelma Thomas</h2>
+      <p>
+        Hi! I'm Thelma Thomas, a passionate web developer and designer with 1+ year of experience.
+        I specialize in building fast, user-friendly, and visually appealing sites and web apps.<br><br>
+        My expertise includes:<br>
+        <ul>
+          <li>HTML, CSS (Grid & Flexbox), JavaScript, React</li>
+          <li>UI/UX Design & Prototyping</li>
+          <li>Responsive & accessible web development</li>
+          <li>Creative problem-solving & teamwork</li>
+        </ul>
+        Outside of coding, I enjoy photography and hiking.
+      </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
